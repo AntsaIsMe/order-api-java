@@ -23,7 +23,7 @@ public class OrderItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_orderItem;
+    private Long id_orderItem;
 
     @Column(nullable = false)
     private Integer quantity_order;
