@@ -18,14 +18,14 @@ public class Product {
     private Long id_prod;
 
     @Column(nullable = false)
-    private String name_prod;
+    private String nameProd;
 
-    private String description_prod;
-
-    @Column(nullable = false)
-    private Double price_prod;
+    private String descriptionProd;
 
     @Column(nullable = false)
-    private Integer stockQuantity_prod;
+    private Double priceProd;
+
+    @Column(nullable = false)
+    private Integer stockQuantityProd;
 
 }

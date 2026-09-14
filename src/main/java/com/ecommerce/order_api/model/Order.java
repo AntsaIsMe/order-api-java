@@ -20,16 +20,16 @@ import java.util.List;
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_order;
+    private long idOrder;
 
     @Column(nullable = false)
-    private LocalDateTime date_order;
+    private LocalDateTime dateOrder;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private OrderStatus status_order = OrderStatus.PENDING;
+    private OrderStatus statusOrder = OrderStatus.PENDING;
 
-    private Double totalAmount_order;
+    private Double totalAmountOrder;
 
     @ManyToOne
     @JoinColumn(name = "customer_id", nullable = false)
