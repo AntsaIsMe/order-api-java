@@ -15,17 +15,17 @@ import lombok.Setter;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_prod;
+    private long idProd;
 
     @Column(nullable = false)
-    private String name_prod;
+    private String nameProd;
 
-    private String description_prod;
-
-    @Column(nullable = false)
-    private Double price_prod;
+    private String descriptionProd;
 
     @Column(nullable = false)
-    private Integer stockQuantity_prod;
+    private Double priceProd;
+
+    @Column(nullable = false)
+    private Integer stockQuantityProd;
 
 }

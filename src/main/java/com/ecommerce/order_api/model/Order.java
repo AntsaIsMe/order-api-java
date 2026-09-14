@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "order")
+@Table(name = "orders")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -20,16 +20,16 @@ import java.util.List;
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_order;
+    private long idOrder;
 
     @Column(nullable = false)
-    private LocalDateTime date_order;
+    private LocalDateTime dateOrder;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private OrderStatus status_order = OrderStatus.PENDING;
+    private OrderStatus statusOrder = OrderStatus.PENDING;
 
-    private Double totalAmount_order;
+    private Double totalAmountOrder;
 
     @ManyToOne
     @JoinColumn(name = "customer_id", nullable = false)
